@@ -10,11 +10,3 @@ int ft_isalpha(int c){
     }
     return 0;
 }
-
-int main(){
-    for (int i = 0; i < 128; i++){
-        if (ft_isalpha(i) != isalpha(i)){
-            printf("L'index %d est une erreur : %d %d\n", i, ft_isalpha(i), isalpha(i));
-        }
-    }
-}
