@@ -18,11 +18,13 @@ SRC = ft_isdigit.c \
 		ft_memmove.c \
 		ft_memchr.c \
 		ft_strchr.c \
-		ft_strlen.c
+		ft_strlen.c \
+		ft_strnstr.c \
+		test.c
 
 OBJ = $(SRC:.c=.o)
 
-PATH_SRC = $(addprefix scrcs/, $(SRC))
+PATH_SRC = $(addprefix srcs/, $(SRC))
 PATH_OBJ = $(addprefix obj/, $(OBJ))
 
 
@@ -35,7 +37,7 @@ $(LIB): $(PATH_OBJ)
 	ar rc $@ $(PATH_OBJ)
 	ranlib $@
 
-$(addprefix obj/, %.o): $(addprefix scrcs/, %.c)
+$(addprefix obj/, %.o): $(addprefix srcs/, %.c)
 	$(CC) $(CFLAG) -c $< -o $@ -I$(INCLUDE)
 
 clean:
