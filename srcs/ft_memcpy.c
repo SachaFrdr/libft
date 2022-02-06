@@ -18,15 +18,4 @@ void *ft_memcpy(void *restrict dest, const void *restrict src, size_t n){
     return pdest;
 }
 
-void printMem(void *memArea, size_t size){
-    size_t i;
-
-    i = 0;
-    while(i < size){
-        printf("Adresse : %p ", memArea+i);
-        printf("Contenu : %hhu\n", ((char *)memArea)[i]);
-        i++;
-    }
-    printf("\n\n");
-}
 

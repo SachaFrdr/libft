@@ -20,6 +20,8 @@ SRC = ft_isdigit.c \
 		ft_strchr.c \
 		ft_strlen.c \
 		ft_strnstr.c \
+		ft_calloc.c \
+		ft_strdup.c \
 		test.c
 
 OBJ = $(SRC:.c=.o)
