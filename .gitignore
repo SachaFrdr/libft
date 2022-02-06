@@ -2,3 +2,5 @@
 *.pdf
 *.a
 TD*
+obj/
+*.o
